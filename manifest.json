@@ -1,0 +1,25 @@
+{
+    "name": "YTM Play/Pause ",
+    "version": "0.1",
+    "manifest_version" : 3,
+    "description": "Play Pause on Youtube Music by clicking toolbar icon",
+    "background" : {
+      "service_worker" : "background.js"
+    },
+    "icons": { 
+      "16": "assets/play16.png",                  
+      "19": "assets/play19.png",
+      "38": "assets/play38.png",
+      "48": "assets/play48.png",
+      "128": "assets/play128.png"  
+    },    
+    "action": {
+      "default_icon": "assets/play48.png"
+    },
+    "permissions": [
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://music.youtube.com/"
+  ]
+}
